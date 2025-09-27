@@ -5,15 +5,14 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task4.V23.Lib
 {
     public class DataService : ISprint1Task4V23
     {
-        public double Calculate(double x)
+        // Формула: y = sqrt(|x + y|) / |3 - x|
+        public double Calculate(double x, double y)
         {
-            double result = Math.Sqrt(x + 1) / x;
-            return Math.Round(result, 3);
-        }
+            double numerator = Math.Sqrt(Math.Abs(x + y));
+            double denominator = Math.Abs(3 - x);
 
-        double ISprint1Task4V23.Calculate(double x, double y)
-        {
-            throw new NotImplementedException();
+            double result = numerator / denominator;
+            return Math.Round(result, 3);
         }
     }
 }

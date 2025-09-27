@@ -17,22 +17,25 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task4.V23
             Console.WriteLine("* Выполнила: Хисамутдинова П. Р. | ПКТб-25-1                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Вычислить по формуле: y = sqrt(x + 1) / x                               *");
+            Console.WriteLine("* Вычислить по формуле: y = sqrt(|x + y|) / |3 - x|                       *");
             Console.WriteLine("* Округлить результат до 3 знаков после запятой.                          *");
             Console.WriteLine("***************************************************************************");
 
             Console.Write("Введите x: ");
             double x = double.Parse(Console.ReadLine() ?? "0", CultureInfo.InvariantCulture);
 
+            Console.Write("Введите y: ");
+            double y = double.Parse(Console.ReadLine() ?? "0", CultureInfo.InvariantCulture);
+
             var ds = new DataService();
-            double result = ds.Calculate(x);
+            double result = ds.Calculate(x, y);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("y = " + result.ToString("F3", CultureInfo.InvariantCulture));
-
             Console.WriteLine("***************************************************************************");
+
             Console.WriteLine("Нажмите любую клавишу для выхода...");
             Console.ReadKey();
         }
