@@ -4,6 +4,10 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task0.V2.Lib
 {
     public class DataService : ISprint1Task0V2
     {
+        public DataService()
+        {
+        }
+
         /// <summary>
         /// Вычисляет выражение 3/3*2 + 12/4/3 - 2
         /// </summary>
@@ -13,4 +17,4 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task0.V2.Lib
             return result;
         }
     }
-}
+}  

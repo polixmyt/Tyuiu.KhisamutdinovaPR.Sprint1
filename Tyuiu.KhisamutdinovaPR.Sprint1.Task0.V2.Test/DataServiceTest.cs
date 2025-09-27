@@ -14,4 +14,4 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task0.V2.Test
             Assert.AreEqual(1.0, actual, 1e-10, "Ожидается результат 1.0");
         }
     }
-}
+}   
