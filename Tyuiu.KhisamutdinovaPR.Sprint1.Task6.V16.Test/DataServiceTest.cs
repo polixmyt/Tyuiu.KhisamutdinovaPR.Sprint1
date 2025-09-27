@@ -7,21 +7,19 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task6.V16.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void CheckSymbols_HasBothSymbols_ReturnsTrue()
+        public void CheckSymbols_InputHasBoth_ReturnsTrue()
         {
-            var ds = new DataService();
-            string input = "Привет! Как дела?";
-            bool result = ds.CheckSymbols(input);
-            Assert.IsTrue(result);
+            DataService ds = new DataService();
+            string input = "Ты идешь?!";
+            Assert.IsTrue(ds.CheckSymbols(input));
         }
 
         [TestMethod]
-        public void CheckSymbols_MissingOneSymbol_ReturnsFalse()
+        public void CheckSymbols_InputHasOnlyOne_ReturnsFalse()
         {
-            var ds = new DataService();
+            DataService ds = new DataService();
             string input = "Привет!";
-            bool result = ds.CheckSymbols(input);
-            Assert.IsFalse(result);
+            Assert.IsFalse(ds.CheckSymbols(input));
         }
     }
 }

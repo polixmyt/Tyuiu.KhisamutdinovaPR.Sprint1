@@ -16,19 +16,22 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task6.V16
             Console.WriteLine("* Выполнила: Хисамутдинова П. Р. | ПКТб-25-1                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Проверить, содержит ли введённый текст '!' и '?'.                       *");
+            Console.WriteLine("* Пользователь вводит строку. Проверить, что в строке есть '!' и '?'.     *");
             Console.WriteLine("***************************************************************************");
 
             Console.Write("Введите текст: ");
             string input = Console.ReadLine() ?? "";
 
-            var ds = new DataService();
+            DataService ds = new DataService();
             bool result = ds.CheckSymbols(input);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(result ? "Строка содержит и '!' и '?'." : "Не все символы найдены.");
+            if (result)
+                Console.WriteLine("Строка содержит и '!' и '?'.");
+            else
+                Console.WriteLine("Строка не содержит оба символа одновременно.");
             Console.WriteLine("***************************************************************************");
 
             Console.WriteLine("Нажмите любую клавишу для выхода...");
