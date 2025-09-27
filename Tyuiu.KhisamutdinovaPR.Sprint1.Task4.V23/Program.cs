@@ -17,8 +17,8 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task4.V23
             Console.WriteLine("* Выполнила: Хисамутдинова П. Р. | ПКТб-25-1                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Вычислить по формуле: sqrt(x + 1) / |3 - x|                             *");
-            Console.WriteLine("* и округлить результат до 3 знаков после запятой.                        *");
+            Console.WriteLine("* Вычислить по формуле: y = sqrt(x + 1) / x                               *");
+            Console.WriteLine("* Округлить результат до 3 знаков после запятой.                          *");
             Console.WriteLine("***************************************************************************");
 
             Console.Write("Введите x: ");

@@ -7,13 +7,11 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task4.V23.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void Calculate_CheckExample()
+        public void Calculate_WhenX60_Returns0166()
         {
             var ds = new DataService();
-
-            // Пример: x = 4 => sqrt(5) / |3 - 4| = 2.236... / 1 = 2.236
-            double expected = 2.236;
-            double actual = ds.Calculate(4);
+            double expected = 0.166;  // sqrt(61) / 60 ≈ 0.166
+            double actual = ds.Calculate(60);
 
             Assert.AreEqual(expected, actual, 0.001);
         }
