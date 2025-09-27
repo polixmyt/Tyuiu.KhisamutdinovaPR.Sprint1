@@ -5,13 +5,11 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task3.V4.Lib
 {
     public class DataService : ISprint1Task3V4
     {
+        // Возвращает стоимость покупки для count комплектов.
+        // 1 комплект: тетрадь 3.5 руб + обложка 0.5 руб = 4.0 руб
         public double CalculatePurchase(int count)
         {
-            // По условию тестировщика: 1 комплект = 4.0 руб
-            double priceNotebook = 3.5;
-            double priceCover = 0.5;
-
-            double total = (priceNotebook + priceCover) * count;
+            double total = 4.0 * count;
             return Math.Round(total, 3);
         }
 

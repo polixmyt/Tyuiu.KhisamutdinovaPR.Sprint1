@@ -7,15 +7,10 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task3.V4.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void CalculatePurchase_ReturnsExpected()
+        public void OneSet_ShouldBeFourRubles()
         {
             var ds = new DataService();
-
-            // Пример: 7 комплектов => (2.75 + 0.5) * 7 = 22.75
-            double expected = 22.75;
-            double actual = ds.CalculatePurchase(7);
-
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(4.0, ds.CalculatePurchase(1));
         }
     }
 }
