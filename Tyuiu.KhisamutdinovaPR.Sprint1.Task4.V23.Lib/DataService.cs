@@ -11,5 +11,10 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task4.V23.Lib
             double result = Math.Sqrt(x + 1) / x;
             return Math.Round(result, 3);
         }
+
+        public double Calculate(double x, double y)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
