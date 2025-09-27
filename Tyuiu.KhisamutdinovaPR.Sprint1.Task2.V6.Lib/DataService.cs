@@ -6,6 +6,11 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task2.V6.Lib
     // Предполагаемый интерфейс: ISprint1Task2V6
     public class DataService : ISprint1Task2V6
     {
+        public double ConvertMToKm(int value)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Переводит метры в километры с округлением до 3 знаков
         /// </summary>
