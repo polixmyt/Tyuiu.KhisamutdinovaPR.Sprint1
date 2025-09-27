@@ -7,15 +7,10 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task2.V6.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ConvertMetersToKm_CorrectResult()
+        public void ConvertMToKm_ReturnsRounded()
         {
             var ds = new DataService();
-
-            // 1234 м = 1.234 км (округляем до 3 знаков)
-            double expected = 1.234;
-            double actual = ds.ConvertToKm(1234);
-
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(1.234, ds.ConvertMToKm(1234));
         }
     }
 }
