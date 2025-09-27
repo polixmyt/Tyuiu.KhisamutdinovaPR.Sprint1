@@ -31,4 +31,4 @@ namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task0.V2
             Console.ReadKey();
         }
     }
-}  
+}
