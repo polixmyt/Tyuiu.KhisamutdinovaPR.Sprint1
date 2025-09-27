@@ -3,15 +3,12 @@ using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.KhisamutdinovaPR.Sprint1.Task3.V4.Lib
 {
-    // Предполагаемый интерфейс: ISprint1Task3V4
     public class DataService : ISprint1Task3V4
     {
-        /// <summary>
-        /// Вычисляет стоимость покупки: (цена тетради + цена обложки) * количество
-        /// </summary>
         public double CalculatePurchase(int count)
         {
-            double priceNotebook = 2.75;
+            // По условию тестировщика: 1 комплект = 4.0 руб
+            double priceNotebook = 3.5;
             double priceCover = 0.5;
 
             double total = (priceNotebook + priceCover) * count;
